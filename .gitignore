@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.eggs/
+dist/
+build/
+sdist/
+*.egg-info/
+*.deb
+*.rpm
+tmp*
+
+_MEIPASS*
+!**/_MEIPASS*
+*.spec
+
+# Environments
+.env
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Log files and databases
+*.log
+*.sql
+*.sqlite
+
+# OS or Editor-specific files
+.DS_Store
+Thumbs.db
+.vscode/
+*.swp
+*.swo
+.idea/
