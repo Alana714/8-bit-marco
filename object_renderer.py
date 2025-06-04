@@ -9,8 +9,6 @@ class ObjectRenderer:
         self.wall_textures = self.load_wall_textures()
         self.sky_image = self.get_texture('resources/textures/ceiling2.png', (WIDTH, HALF_HEIGHT))
         self.sky_offset = 0
-        self.floor_texture = self.get_texture('resources/textures/parede.png')
-
         #self.blood_screen = self.get_texture('resources/textures/blood_screen.png', RES)
         self.digit_size = 90
         #self.digit_images = [self.get_texture(f'resources/textures/digits/{i}.png', [self.digit_size] * 2)
@@ -28,7 +26,13 @@ class ObjectRenderer:
         self.screen.blit(self.sky_image, (-self.sky_offset, 0))
         self.screen.blit(self.sky_image, (-self.sky_offset + WIDTH, 0))
         # floor
-        pg.draw.rect(self.screen, FLOOR_COLOR, (0, HALF_HEIGHT, WIDTH, HEIGHT))
+        # pg.draw.rect(self.screen, FLOOR_COLOR, (0, HALF_HEIGHT, WIDTH, HEIGHT))
+        #se ficar pesado é por isso aqui
+        for y in range(HALF_HEIGHT, HEIGHT):
+            brightness = int(100 + (y - HALF_HEIGHT) * 155 / (HEIGHT - HALF_HEIGHT))
+            color = (brightness, brightness, brightness)  # tons de cinza
+            pg.draw.line(self.screen, color, (0, y), (WIDTH, y))
+        
 
     def render_game_objects(self):
         list_objects = sorted(self.game.raycasting.objects_to_render, key=lambda t: t[0], reverse=True)
