@@ -9,6 +9,8 @@ class ObjectRenderer:
         self.wall_textures = self.load_wall_textures()
         self.sky_image = self.get_texture('resources/textures/ceiling2.png', (WIDTH, HALF_HEIGHT))
         self.sky_offset = 0
+        self.floor_texture = self.get_texture('resources/textures/parede.png')
+
         #self.blood_screen = self.get_texture('resources/textures/blood_screen.png', RES)
         self.digit_size = 90
         #self.digit_images = [self.get_texture(f'resources/textures/digits/{i}.png', [self.digit_size] * 2)
@@ -40,5 +42,5 @@ class ObjectRenderer:
 
     def load_wall_textures(self):
         return {
-            1: self.get_texture('resources/textures/parede.png'),
+            1: self.get_texture('resources/textures/wall.png'),
         }
