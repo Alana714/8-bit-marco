@@ -8,6 +8,7 @@ from object_renderer import *
 from sprite_object import *
 from object_handler import *
 from sound import *
+from ticket import *
 
 class Game:
     def __init__(self):
@@ -25,6 +26,7 @@ class Game:
         self.raycasting = RayCasting(self)
         self.static_sprite = SpriteObject(self)
         self.object_handler = ObjectHandler(self)
+        self.ticket = Ticket(self)
         self.sound = Sound(self)
         pg.mixer.music.play(-1)
 
@@ -40,6 +42,7 @@ class Game:
     def draw(self):
         # self.screen.fill('black')
         self.object_renderer.draw()
+        self.ticket.draw()
         # self.map.draw()
         # self.player.draw()
     

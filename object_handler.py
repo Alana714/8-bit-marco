@@ -23,6 +23,7 @@ class ObjectHandler:
         # self.spawn_npc()
 
         # sprite map
+        add_sprite(SpriteObject(game, path=self.static_sprite_path + 'wecan.png', scale=3.0, pos=(3.5, 2.5)))
         # add_sprite(AnimatedSprite(game))
         # add_sprite(AnimatedSprite(game, pos=(1.5, 1.5)))
         # add_sprite(AnimatedSprite(game, pos=(1.5, 7.5)))
