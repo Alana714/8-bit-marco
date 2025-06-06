@@ -5,7 +5,7 @@ from collections import deque
 
 
 class SpriteObject:
-    def __init__(self, game, path='resources/sprites/static_sprites/block.png',
+    def __init__(self, game, path='resources/sprites/static_sprites/poste.png',
                  pos=(10.5, 3.5), scale=0.5, shift=0.67):
         self.game = game
         self.player = game.player

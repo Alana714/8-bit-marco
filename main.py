@@ -35,6 +35,7 @@ class Game:
         self.raycasting.update()
         self.object_handler.update()
         self.static_sprite.update()
+        self.ticket.update()
         pg.display.flip()
         self.delta_time = self.clock.tick(FPS)
         pg.display.set_caption(f'{self.clock.get_fps() : .1f}')
