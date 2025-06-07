@@ -10,7 +10,10 @@ class Ticket(AnimatedSprite):
         self.ticket_pos = (HALF_WIDTH - self.images[0].get_width() // 2, HEIGHT - self.images[0].get_height())
 
     def draw(self):
-        self.game.screen.blit(self.images[0], self.ticket_pos)
+        if self.player.holding_ticket:
+            self.game.screen.blit(self.images[0], self.ticket_pos)
+        else:
+            return
 
     def update(self):
         pass

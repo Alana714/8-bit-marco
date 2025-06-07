@@ -7,6 +7,12 @@ class Player:
         self.game = game
         self.x, self.y = PLAYER_POS
         self.angle = PLAYER_ANGLE
+        self.holding_ticket = True
+    
+    def giving_ticket(self, event):
+        if event.type == pg.MOUSEBUTTONDOWN:
+            if event.button == 1 and self.holding_ticket:
+                self.holding_ticket = False
 
     def movement(self):
         sin_a = math.sin(self.angle)
