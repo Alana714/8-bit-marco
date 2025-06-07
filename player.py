@@ -49,7 +49,10 @@ class Player:
         pg.draw.circle(self.game.screen, 'green', (self.x * 100, self.y * 100), 15)
     
     def check_wall(self, x, y):
-        return (x, y) not in self.game.map.world_map
+        if x == 5 and y == 4:
+            return True
+        else:
+            return (x, y) not in self.game.map.world_map
 
     def check_wall_collision(self, dx, dy):
         scale = PLAYER_SIZE_SCALE / self.game.delta_time
