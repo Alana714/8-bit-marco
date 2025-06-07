@@ -8,10 +8,12 @@ class Player:
         self.x, self.y = PLAYER_POS
         self.angle = PLAYER_ANGLE
         self.holding_ticket = True
+        self.ticket = False
     
     def giving_ticket(self):
         if self.holding_ticket and (self.game.player.map_pos == (10, 3)):
             self.holding_ticket = False
+            self.ticket = True
 
     def movement(self):
         sin_a = math.sin(self.angle)
@@ -49,8 +51,8 @@ class Player:
         pg.draw.circle(self.game.screen, 'green', (self.x * 100, self.y * 100), 15)
     
     def check_wall(self, x, y):
-        if x == 5 and y == 4:
-            return True
+        if x == 4 and y == 3:
+            return self.ticket
         else:
             return (x, y) not in self.game.map.world_map
 
