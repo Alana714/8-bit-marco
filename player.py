@@ -11,7 +11,7 @@ class Player:
         self.ticket = False
     
     def giving_ticket(self):
-        if self.holding_ticket and (self.game.player.map_pos == (10, 3)):
+        if self.holding_ticket and (self.game.player.map_pos == (5, 4)):
             self.holding_ticket = False
             self.ticket = True
 
