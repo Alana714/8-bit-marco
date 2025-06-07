@@ -52,7 +52,8 @@ class Game:
             if event.type == pg.QUIT or (event.type == pg.KEYDOWN and event.key == pg.K_ESCAPE):
                 pg.quit()
                 sys.exit()
-            self.player.giving_ticket(event)
+            if event.type == pg.MOUSEBUTTONDOWN and event.button == 1:
+                self.player.giving_ticket()
 
     def run(self):
         while True:
