@@ -27,7 +27,10 @@ class ObjectHandler:
 
         add_sprite(BlockObject(game, pos=(4.7, 3)))
         add_sprite(BlockObject(game, pos=(4.2, 3)))
+        add_sprite(SpriteObject(game, path=self.static_sprite_path + 'atendente.png', pos=(5.95, 4.5), shift=0.08))
 
+        add_sprite(AnimatedSprite(game, path=self.anim_sprite_path + 'mulheres/1.png', pos=(11.95, 1.5), shift=0.05))
+        
         # add_sprite(AnimatedSprite(game))
         # add_sprite(AnimatedSprite(game, pos=(1.5, 1.5)))
         # add_sprite(AnimatedSprite(game, pos=(1.5, 7.5)))
@@ -37,7 +40,6 @@ class ObjectHandler:
         # add_sprite(AnimatedSprite(game, pos=(7.5, 5.5)))
         # add_sprite(AnimatedSprite(game, pos=(14.5, 1.5)))
         # add_sprite(AnimatedSprite(game, pos=(14.5, 4.5)))
-        # add_sprite(AnimatedSprite(game, path=self.anim_sprite_path + 'red_light/0.png', pos=(14.5, 5.5)))
         # add_sprite(AnimatedSprite(game, path=self.anim_sprite_path + 'red_light/0.png', pos=(14.5, 7.5)))
         # add_sprite(AnimatedSprite(game, path=self.anim_sprite_path + 'red_light/0.png', pos=(12.5, 7.5)))
         # add_sprite(AnimatedSprite(game, path=self.anim_sprite_path + 'red_light/0.png', pos=(9.5, 7.5)))

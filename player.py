@@ -1,5 +1,6 @@
 from settings import *
 import pygame as pg
+from object_handler import *
 import math
 
 class Player:
@@ -12,6 +13,7 @@ class Player:
     def giving_ticket(self):
         if self.holding_ticket and (self.game.player.map_pos == (5, 4)):
             self.holding_ticket = False
+            self.game.object_handler.add_sprite(SpriteObject(self.game, path=self.game.object_handler.static_sprite_path + 'banner.png', pos=(5, 4.5), shift=0.08))
 
     def movement(self):
         sin_a = math.sin(self.angle)
