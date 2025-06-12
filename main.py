@@ -9,6 +9,7 @@ from sprite_object import *
 from object_handler import *
 from sound import *
 from ticket import *
+from dialog1 import *
 
 class Game:
     def __init__(self):
@@ -27,6 +28,7 @@ class Game:
         self.static_sprite = SpriteObject(self)
         self.object_handler = ObjectHandler(self)
         self.ticket = Ticket(self)
+        self.dialog1 = DialogTicket(self)
         self.sound = Sound(self)
         pg.mixer.music.play(-1)
 
@@ -35,7 +37,6 @@ class Game:
         self.raycasting.update()
         self.object_handler.update()
         self.static_sprite.update()
-        self.ticket.update()
         pg.display.flip()
         self.delta_time = self.clock.tick(FPS)
         pg.display.set_caption(f'{self.clock.get_fps() : .1f}')
@@ -44,6 +45,7 @@ class Game:
         # self.screen.fill('black')
         self.object_renderer.draw()
         self.ticket.draw()
+        self.dialog1.draw()
         # self.map.draw()
         # self.player.draw()
     
