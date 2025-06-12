@@ -14,6 +14,3 @@ class Ticket(AnimatedSprite):
             self.game.screen.blit(self.images[0], self.ticket_pos)
         else:
             return
-
-    def update(self):
-        pass
