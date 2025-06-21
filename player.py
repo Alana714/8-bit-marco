@@ -13,7 +13,6 @@ class Player:
     def giving_ticket(self):
         if self.holding_ticket and (self.game.player.map_pos == (5, 4) or self.game.player.map_pos == (4.5, 4)):
             self.holding_ticket = False
-            # self.game.object_handler.add_sprite(SpriteObject(self.game, path=self.game.object_handler.static_sprite_path + 'banner.png', pos=(5, 4.5), shift=0.08))
 
     def movement(self):
         sin_a = math.sin(self.angle)
@@ -39,10 +38,6 @@ class Player:
 
         self.check_wall_collision(dx, dy)
 
-        # if keys[pg.K_LEFT]:
-        #     self.angle -= PLAYER_ROT_SPEED * self.game.delta_time
-        # if keys[pg.K_RIGHT]:
-        #     self.angle += PLAYER_ROT_SPEED * self.game.delta_time
         self.angle %= math.tau
     
     def draw(self):
