@@ -1,17 +1,11 @@
-from sprite_object import *
+from dialogs import *
 class ObjectHandler:
     def __init__(self, game):
         self.game = game
         self.sprite_list = []
-        self.npc_list = []
-        self.npc_sprite_path = 'resources/sprites/npc/'
         self.static_sprite_path = 'resources/sprites/static_sprites/'
         self.anim_sprite_path = 'resources/sprites/animated_sprites/'
         add_sprite = self.add_sprite
-        self.npc_positions = {}
-
-        self.weights = [70, 20, 10]
-        self.restricted_area = {(i, j) for i in range(10) for j in range(10)}
 
         # sprite map
         # add_sprite(SpriteObject(game, path=self.static_sprite_path + 'wecan.png', scale=1.0, pos=(3.5, 2.5), shift=0.3))
