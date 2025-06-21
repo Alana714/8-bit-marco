@@ -28,7 +28,7 @@ class Game:
         self.static_sprite = SpriteObject(self)
         self.object_handler = ObjectHandler(self)
         self.ticket = Ticket(self)
-        self.dialog1 = DialogTicket(self)
+        self.dialogs = Dialogs(self)
         self.sound = Sound(self)
         pg.mixer.music.play(-1)
 
@@ -45,7 +45,7 @@ class Game:
         # self.screen.fill('black')
         self.object_renderer.draw()
         self.ticket.draw()
-        self.dialog1.draw()
+        self.dialogs.draw()
         # self.map.draw()
         # self.player.draw()
     
