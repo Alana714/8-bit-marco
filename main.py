@@ -9,7 +9,7 @@ from sprite_object import *
 from object_handler import *
 from sound import *
 from ticket import *
-from dialog1 import *
+from dialogs import *
 
 class Game:
     def __init__(self):
