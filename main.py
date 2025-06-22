@@ -28,7 +28,25 @@ class Game:
         self.static_sprite = SpriteObject(self)
         self.object_handler = ObjectHandler(self)
         self.ticket = Ticket(self)
+
         self.dialogs = Dialogs(self)
+        self.dialogAna = DialogAna(self)
+        self.dialogBertha = DialogBertha(self)
+        self.dialogCarmen = DialogCarmen(self)
+        self.dialogClarice = DialogClarice(self)
+        self.dialogElis = DialogElis(self)
+        self.dialogFernanda = DialogFernanda(self)
+        self.dialogMaria = DialogMaria(self)
+        self.dialogMariaPenha = DialogMariaPenha(self)
+
+        self.dialogAda = DialogAda(self)
+        self.dialogChieko = DialogChieko(self)
+        self.dialogGrace = DialogGrace(self)
+        self.dialogHedy = DialogHedy(self)
+        self.dialogMarie = DialogMarie(self)
+        self.dialogRadia = DialogRadia(self)
+        self.dialogValerie = DialogValerie(self)
+
         self.sound = Sound(self)
         pg.mixer.music.play(-1)
 
@@ -44,7 +62,25 @@ class Game:
     def draw(self):
         self.object_renderer.draw()
         self.ticket.draw()
+
         self.dialogs.draw()
+        self.dialogAna.draw()
+        self.dialogBertha.draw()
+        self.dialogCarmen.draw()
+        self.dialogClarice.draw()
+        self.dialogElis.draw()
+        self.dialogFernanda.draw()
+        self.dialogMaria.draw()
+        self.dialogMariaPenha.draw()
+
+        self.dialogs.draw()
+        self.dialogs.draw()
+        self.dialogs.draw()
+        self.dialogs.draw()
+        self.dialogs.draw()
+        self.dialogs.draw()
+        self.dialogs.draw()
+
         # self.map.draw()
         # self.player.draw()
     
