@@ -1,8 +1,7 @@
 from sprite_object import *
 class Dialogs(AnimatedSprite):
-    def __init__(self, game, path='resources/sprites/dialogs/atendente/dialogo.png', scale=0.5, pos=(6, 13)):
-        super().__init__(game=game, path=path, scale=scale, pos=pos)
-        self.pos = pos
+    def __init__(self, game, path='resources/sprites/dialogs/atendente/dialogo.png', scale=0.5):
+        super().__init__(game=game, path=path, scale=scale)
         self.images = deque(
             [pg.transform.smoothscale(img, (self.image.get_width() * scale, self.image.get_height() * scale))
              for img in self.images])
