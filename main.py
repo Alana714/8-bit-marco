@@ -10,7 +10,6 @@ from object_handler import *
 from sound import *
 from ticket import *
 from dialogs import *
-from dialog_handler import *
 
 class Game:
     def __init__(self):
@@ -28,7 +27,6 @@ class Game:
         self.raycasting = RayCasting(self)
         self.static_sprite = SpriteObject(self)
         self.object_handler = ObjectHandler(self)
-        self.dialog_handler = DialogHandler(self)
         self.ticket = Ticket(self)
         self.dialogs = Dialogs(self)
         self.sound = Sound(self)
