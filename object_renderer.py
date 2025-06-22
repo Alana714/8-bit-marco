@@ -46,7 +46,6 @@ class ObjectRenderer:
             3: self.get_texture('resources/textures/direita.png'),
             4: self.get_texture('resources/textures/esquerda.png'),
             5: self.get_texture('resources/textures/quadro.png'),
-            6: self.get_texture('resources/textures/quadromedio.png'),
-            7: self.get_texture('resources/textures/quadrotexto.png'),
-            8: self.get_texture('resources/textures/wecan.png'),
+            6: self.get_texture('resources/textures/hedy.png'),
+            9: self.get_texture('resources/textures/marie.png')
         }
