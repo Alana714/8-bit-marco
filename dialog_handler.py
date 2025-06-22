@@ -2,15 +2,11 @@ from dialogs import *
 class DialogHandler:
     def __init__(self, game):
         self.game = game
-        self.dialogs_list = []
-        self.dialogs_path = 'resources/sprites/dialogs/'
-        add_dialog = self.add_dialog
+        self.dialog_path = 'resources\sprites\dialogs'
+        draw_dialog = self.draw_dialog
 
-        # sprite map
-        add_dialog(Dialogs(game, pos=(5, 1)))
+        draw_dialog(Dialogs(game, pos=(5,1)))
+        draw_dialog(Dialogs(game, pos=(5,2)))
 
-    def update(self):
-        [dialog.update() for dialog in self.dialogs_list]
-
-    def add_dialog(self, dialog):
-        self.dialogs_list.append(dialog)
+    def draw_dialog(self, dialog):
+        Dialogs(dialog)
