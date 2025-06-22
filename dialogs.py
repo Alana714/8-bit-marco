@@ -112,7 +112,7 @@ class DialogChieko(AnimatedSprite):
             return
         
 class DialogMaria(AnimatedSprite):
-    def __init__(self, game, path='resources/sprites/dialogs/criacoes/maria/maria.png', scale=0.5):
+    def __init__(self, game, path='resources/sprites/dialogs/brasil/maria/maria.png', scale=0.5):
         super().__init__(game=game, path=path, scale=scale)
         self.images = deque(
             [pg.transform.smoothscale(img, (self.image.get_width() * scale, self.image.get_height() * scale))
@@ -126,7 +126,7 @@ class DialogMaria(AnimatedSprite):
             return
 
 class DialogBertha(AnimatedSprite):
-    def __init__(self, game, path='resources/sprites/dialogs/criacoes/bertha/bertha.png', scale=0.5):
+    def __init__(self, game, path='resources/sprites/dialogs/brasil/bertha/bertha.png', scale=0.5):
         super().__init__(game=game, path=path, scale=scale)
         self.images = deque(
             [pg.transform.smoothscale(img, (self.image.get_width() * scale, self.image.get_height() * scale))
@@ -140,7 +140,7 @@ class DialogBertha(AnimatedSprite):
             return
 
 class DialogMariaPenha(AnimatedSprite):
-    def __init__(self, game, path='resources/sprites/dialogs/criacoes/mariapenha/mariapenha.png', scale=0.5):
+    def __init__(self, game, path='resources/sprites/dialogs/brasil/mariapenha/mariapenha.png', scale=0.5):
         super().__init__(game=game, path=path, scale=scale)
         self.images = deque(
             [pg.transform.smoothscale(img, (self.image.get_width() * scale, self.image.get_height() * scale))
@@ -154,7 +154,7 @@ class DialogMariaPenha(AnimatedSprite):
             return
 
 class DialogClarice(AnimatedSprite):
-    def __init__(self, game, path='resources/sprites/dialogs/criacoes/clarice/clarice.png', scale=0.5):
+    def __init__(self, game, path='resources/sprites/dialogs/brasil/clarice/clarice.png', scale=0.5):
         super().__init__(game=game, path=path, scale=scale)
         self.images = deque(
             [pg.transform.smoothscale(img, (self.image.get_width() * scale, self.image.get_height() * scale))
@@ -168,7 +168,7 @@ class DialogClarice(AnimatedSprite):
             return
 
 class DialogAna(AnimatedSprite):
-    def __init__(self, game, path='resources/sprites/dialogs/criacoes/ana/ana.png', scale=0.5):
+    def __init__(self, game, path='resources/sprites/dialogs/brasil/ana/ana.png', scale=0.5):
         super().__init__(game=game, path=path, scale=scale)
         self.images = deque(
             [pg.transform.smoothscale(img, (self.image.get_width() * scale, self.image.get_height() * scale))
@@ -182,7 +182,7 @@ class DialogAna(AnimatedSprite):
             return
         
 class DialogCarmen(AnimatedSprite):
-    def __init__(self, game, path='resources/sprites/dialogs/criacoes/carmen/carmen.png', scale=0.5):
+    def __init__(self, game, path='resources/sprites/dialogs/brasil/carmen/carmen.png', scale=0.5):
         super().__init__(game=game, path=path, scale=scale)
         self.images = deque(
             [pg.transform.smoothscale(img, (self.image.get_width() * scale, self.image.get_height() * scale))
@@ -196,7 +196,7 @@ class DialogCarmen(AnimatedSprite):
             return
         
 class DialogElis(AnimatedSprite):
-    def __init__(self, game, path='resources/sprites/dialogs/criacoes/elis/elis.png', scale=0.5):
+    def __init__(self, game, path='resources/sprites/dialogs/brasil/elis/elis.png', scale=0.5):
         super().__init__(game=game, path=path, scale=scale)
         self.images = deque(
             [pg.transform.smoothscale(img, (self.image.get_width() * scale, self.image.get_height() * scale))
@@ -210,7 +210,7 @@ class DialogElis(AnimatedSprite):
             return
         
 class DialogFernanda(AnimatedSprite):
-    def __init__(self, game, path='resources/sprites/dialogs/criacoes/fernanda/fernanda.png', scale=0.5):
+    def __init__(self, game, path='resources/sprites/dialogs/brasil/fernanda/fernanda.png', scale=0.5):
         super().__init__(game=game, path=path, scale=scale)
         self.images = deque(
             [pg.transform.smoothscale(img, (self.image.get_width() * scale, self.image.get_height() * scale))
