@@ -11,7 +11,7 @@ class Player:
         self.holding_ticket = True
     
     def giving_ticket(self):
-        if self.holding_ticket and (self.game.player.map_pos == (7, 13) or self.game.player.map_pos == (6.5, 13)):
+        if self.holding_ticket and (self.game.player.map_pos == (9, 16) or self.game.player.map_pos == (9.5, 16)):
             self.holding_ticket = False
 
     def movement(self):
@@ -46,7 +46,7 @@ class Player:
         pg.draw.circle(self.game.screen, 'green', (self.x * 100, self.y * 100), 15)
     
     def check_wall(self, x, y):
-        if x == 6 and y == 12:
+        if x == 8 and y == 15:
             return not self.holding_ticket
         else:
             return (x, y) not in self.game.map.world_map

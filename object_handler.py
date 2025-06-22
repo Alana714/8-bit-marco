@@ -10,8 +10,8 @@ class ObjectHandler:
         # sprite map
         # add_sprite(SpriteObject(game, path=self.static_sprite_path + 'wecan.png', scale=1.0, pos=(3.5, 2.5), shift=0.3))
 
-        add_sprite(BlockObject(game, pos=(6.7, 12)))
-        add_sprite(BlockObject(game, pos=(6.2, 12)))
+        add_sprite(BlockObject(game, pos=(8.7, 15)))
+        add_sprite(BlockObject(game, pos=(8.2, 15)))
         # add_sprite(SpriteObject(game, path=self.static_sprite_path + 'atendente.png', pos=(5.95, 4.5), shift=0.08))
 
         #add_sprite(AnimatedSprite(game, path=self.anim_sprite_path + 'mulheres/1.png', pos=(11.95, 1.5), shift=0.05))
