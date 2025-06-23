@@ -14,7 +14,7 @@ class Ticket(AnimatedSprite):
             return
         
 class AvisoInicial(AnimatedSprite):
-    def __init__(self, game, path='resources/textures/inicio/inicio1.png', scale=0.5):
+    def __init__(self, game, path='resources/textures/inicio/inicio.png', scale=0.5):
         super().__init__(game=game, path=path, scale=scale)
         self.images = deque(
             [pg.transform.smoothscale(img, (self.image.get_width() * scale, self.image.get_height() * scale))
