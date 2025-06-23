@@ -83,7 +83,7 @@ class ObjectRenderer:
             35: self.get_texture('resources/textures/brasil/bertha35.png'),
             36: self.get_texture('resources/textures/brasil/mariapenha36.png'),
             37: self.get_texture('resources/textures/brasil/clarice37.png'),
-            38: self.get_texture('resources/textures/brasil/irma38.png'),
+            38: self.get_texture('resources/textures/brasil/ana38.png'),
             39: self.get_texture('resources/textures/brasil/carmen39.png'),
             40: self.get_texture('resources/textures/brasil/elis40.png'),
             41: self.get_texture('resources/textures/brasil/fernanda41.png'),
