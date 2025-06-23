@@ -10,7 +10,6 @@ from object_handler import *
 from sound import *
 from ticket import *
 from dialogs import *
-
 class Game:
     def __init__(self):
         pg.init()
