@@ -29,6 +29,8 @@ class Game:
         self.object_handler = ObjectHandler(self)
         self.ticket = Ticket(self)
         self.dialogs = Dialogs(self)
+        self.dialogsArte = DialogsArte(self)
+        self.dialogsMundo = DialogsMundo(self)
         self.sound = Sound(self)
         pg.mixer.music.play(-1)
 
@@ -45,6 +47,8 @@ class Game:
         self.object_renderer.draw()
         self.ticket.draw()
         self.dialogs.draw()
+        self.dialogsArte.draw()
+        self.dialogsMundo.draw()
         # self.map.draw()
         # self.player.draw()
     
