@@ -28,6 +28,7 @@ class Game:
         self.static_sprite = SpriteObject(self)
         self.object_handler = ObjectHandler(self)
         self.ticket = Ticket(self)
+        self.inicio = AvisoInicial(self)
 
         self.dialogs = Dialogs(self)
         self.dialogAna = DialogAna(self)
@@ -62,6 +63,7 @@ class Game:
     def draw(self):
         self.object_renderer.draw()
         self.ticket.draw()
+        self.inicio.draw()
 
         self.dialogs.draw()
         self.dialogAna.draw()
