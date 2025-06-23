@@ -110,53 +110,14 @@ class DialogsCriacoes(AnimatedSprite):
             self.game.screen.blit(self.images[2], self.dialogo)
         elif self.game.player.map_pos == (7, 3):
             self.game.screen.blit(self.images[3], self.dialogo)
-        else:
-            return
-        
-class DialogMarie(AnimatedSprite):
-    def __init__(self, game, path='resources/sprites/dialogs/criacoes/marie/marie.png', scale=0.5):
-        super().__init__(game=game, path=path, scale=scale)
-        self.images = deque(
-            [pg.transform.smoothscale(img, (self.image.get_width() * scale, self.image.get_height() * scale))
-             for img in self.images])
-        self.dialogo = (HALF_WIDTH - self.images[0].get_width() // 2, HEIGHT * 1.2 - self.images[0].get_height())
-
-    def draw(self):
-        if self.game.player.map_pos == (7, 2):
+        elif self.game.player.map_pos == (7, 2):
+            self.game.screen.blit(self.images[4], self.dialogo)
+        elif self.game.player.map_pos == (9, 2):
+            self.game.screen.blit(self.images[5], self.dialogo)
+        elif self.game.player.map_pos == (9, 1):
             self.game.screen.blit(self.images[0], self.dialogo)
         else:
-            return
-        
-        
-class DialogValerie(AnimatedSprite):
-    def __init__(self, game, path='resources/sprites/dialogs/criacoes/valerie/valerie.png', scale=0.5):
-        super().__init__(game=game, path=path, scale=scale)
-        self.images = deque(
-            [pg.transform.smoothscale(img, (self.image.get_width() * scale, self.image.get_height() * scale))
-             for img in self.images])
-        self.dialogo = (HALF_WIDTH - self.images[0].get_width() // 2, HEIGHT * 1.2 - self.images[0].get_height())
-
-    def draw(self):
-        if self.game.player.map_pos == (9, 1):
-            self.game.screen.blit(self.images[0], self.dialogo)
-        else:
-            return
-
-class DialogRadia(AnimatedSprite):
-    def __init__(self, game, path='resources/sprites/dialogs/criacoes/radia/radia.png', scale=0.5):
-        super().__init__(game=game, path=path, scale=scale)
-        self.images = deque(
-            [pg.transform.smoothscale(img, (self.image.get_width() * scale, self.image.get_height() * scale))
-             for img in self.images])
-        self.dialogo = (HALF_WIDTH - self.images[0].get_width() // 2, HEIGHT * 1.2 - self.images[0].get_height())
-
-    def draw(self):
-        if self.game.player.map_pos == (9, 2):
-            self.game.screen.blit(self.images[0], self.dialogo)
-        else:
-            return
-    
-        
+            return        
 class DialogMaria(AnimatedSprite):
     def __init__(self, game, path='resources/sprites/dialogs/brasil/maria/maria.png', scale=0.5):
         super().__init__(game=game, path=path, scale=scale)
