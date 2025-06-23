@@ -33,6 +33,7 @@ class Game:
         self.dialogs = Dialogs(self)
         self.dialogsArte = DialogsArte(self)
         self.dialogsMundo = DialogsMundo(self)
+        self.dialogsHistoria = DialogsHistoria(self)
 
         self.dialogAna = DialogAna(self)
         self.dialogBertha = DialogBertha(self)
@@ -71,6 +72,7 @@ class Game:
         self.dialogs.draw()
         self.dialogsArte.draw()
         self.dialogsMundo.draw()
+        self.dialogsHistoria.draw()
         
         self.dialogAna.draw()
         self.dialogBertha.draw()
