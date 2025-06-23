@@ -31,6 +31,8 @@ class Game:
         self.inicio = AvisoInicial(self)
 
         self.dialogs = Dialogs(self)
+        self.dialogsArte = DialogsArte(self)
+        self.dialogsMundo = DialogsMundo(self)
         self.dialogAna = DialogAna(self)
         self.dialogBertha = DialogBertha(self)
         self.dialogCarmen = DialogCarmen(self)
@@ -66,6 +68,10 @@ class Game:
         self.inicio.draw()
 
         self.dialogs.draw()
+        
+        self.dialogsArte.draw()
+        self.dialogsMundo.draw()
+
         self.dialogAna.draw()
         self.dialogBertha.draw()
         self.dialogCarmen.draw()
