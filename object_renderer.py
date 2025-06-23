@@ -9,8 +9,6 @@ class ObjectRenderer:
         self.wall_textures = self.load_wall_textures()
         self.sky_image = self.get_texture('resources/textures/ceiling2.png', (WIDTH, HALF_HEIGHT))
         self.sky_offset = 0
-        self.digit_size = 90
-        #self.win_image = self.get_texture('resources/textures/win.png', RES)
 
     def draw(self):
         self.draw_background()
@@ -28,7 +26,6 @@ class ObjectRenderer:
             color = (brightness, brightness, brightness)  # tons de cinza
             pg.draw.line(self.screen, color, (0, y), (WIDTH, y))
         
-
     def render_game_objects(self):
         list_objects = sorted(self.game.raycasting.objects_to_render, key=lambda t: t[0], reverse=True)
         for depth, image, pos in list_objects:
