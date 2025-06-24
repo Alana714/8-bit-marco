@@ -118,7 +118,7 @@ class DialogsCriacoes(AnimatedSprite):
             self.game.screen.blit(self.images[6], self.dialogo)
         else:
             return        
-class DialogMaria(AnimatedSprite):
+class DialogsBrasil(AnimatedSprite):
     def __init__(self, game, path='resources/sprites/dialogs/brasil/maria/maria.png', scale=0.5):
         super().__init__(game=game, path=path, scale=scale)
         self.images = deque(
