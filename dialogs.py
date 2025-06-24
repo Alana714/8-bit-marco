@@ -115,7 +115,7 @@ class DialogsCriacoes(AnimatedSprite):
         elif self.game.player.map_pos == (9, 2):
             self.game.screen.blit(self.images[5], self.dialogo)
         elif self.game.player.map_pos == (9, 1):
-            self.game.screen.blit(self.images[0], self.dialogo)
+            self.game.screen.blit(self.images[6], self.dialogo)
         else:
             return        
 class DialogMaria(AnimatedSprite):
@@ -127,105 +127,22 @@ class DialogMaria(AnimatedSprite):
         self.dialogo = (HALF_WIDTH - self.images[0].get_width() // 2, HEIGHT * 1.2 - self.images[0].get_height())
 
     def draw(self):
-        if self.game.player.map_pos == (13, 8):
-            self.game.screen.blit(self.images[0], self.dialogo)
-        else:
-            return
-
-class DialogBertha(AnimatedSprite):
-    def __init__(self, game, path='resources/sprites/dialogs/brasil/bertha/bertha.png', scale=0.5):
-        super().__init__(game=game, path=path, scale=scale)
-        self.images = deque(
-            [pg.transform.smoothscale(img, (self.image.get_width() * scale, self.image.get_height() * scale))
-             for img in self.images])
-        self.dialogo = (HALF_WIDTH - self.images[0].get_width() // 2, HEIGHT * 1.2 - self.images[0].get_height())
-
-    def draw(self):
-        if self.game.player.map_pos == (14, 8):
-            self.game.screen.blit(self.images[0], self.dialogo)
-        else:
-            return
-
-class DialogMariaPenha(AnimatedSprite):
-    def __init__(self, game, path='resources/sprites/dialogs/brasil/mariapenha/mariapenha.png', scale=0.5):
-        super().__init__(game=game, path=path, scale=scale)
-        self.images = deque(
-            [pg.transform.smoothscale(img, (self.image.get_width() * scale, self.image.get_height() * scale))
-             for img in self.images])
-        self.dialogo = (HALF_WIDTH - self.images[0].get_width() // 2, HEIGHT * 1.2 - self.images[0].get_height())
-
-    def draw(self):
-        if self.game.player.map_pos == (15, 8):
-            self.game.screen.blit(self.images[0], self.dialogo)
-        else:
-            return
-
-class DialogClarice(AnimatedSprite):
-    def __init__(self, game, path='resources/sprites/dialogs/brasil/clarice/clarice.png', scale=0.5):
-        super().__init__(game=game, path=path, scale=scale)
-        self.images = deque(
-            [pg.transform.smoothscale(img, (self.image.get_width() * scale, self.image.get_height() * scale))
-             for img in self.images])
-        self.dialogo = (HALF_WIDTH - self.images[0].get_width() // 2, HEIGHT * 1.2 - self.images[0].get_height())
-
-    def draw(self):
-        if self.game.player.map_pos == (15, 7):
-            self.game.screen.blit(self.images[0], self.dialogo)
-        else:
-            return
-
-class DialogAna(AnimatedSprite):
-    def __init__(self, game, path='resources/sprites/dialogs/brasil/ana/ana.png', scale=0.5):
-        super().__init__(game=game, path=path, scale=scale)
-        self.images = deque(
-            [pg.transform.smoothscale(img, (self.image.get_width() * scale, self.image.get_height() * scale))
-             for img in self.images])
-        self.dialogo = (HALF_WIDTH - self.images[0].get_width() // 2, HEIGHT * 1.2 - self.images[0].get_height())
-
-    def draw(self):
         if self.game.player.map_pos == (15, 6):
             self.game.screen.blit(self.images[0], self.dialogo)
+        elif self.game.player.map_pos == (14, 8):
+            self.game.screen.blit(self.images[1], self.dialogo)
+        elif self.game.player.map_pos == (15, 5):
+            self.game.screen.blit(self.images[2], self.dialogo)
+        elif self.game.player.map_pos == (15, 7):
+            self.game.screen.blit(self.images[3], self.dialogo)
+        elif self.game.player.map_pos == (14, 5):
+            self.game.screen.blit(self.images[4], self.dialogo)
+        elif self.game.player.map_pos == (13, 5):
+            self.game.screen.blit(self.images[5], self.dialogo)
+        elif self.game.player.map_pos == (13, 8):
+            self.game.screen.blit(self.images[6], self.dialogo)
+        elif self.game.player.map_pos == (15, 8):
+            self.game.screen.blit(self.images[7], self.dialogo)
         else:
             return
         
-class DialogCarmen(AnimatedSprite):
-    def __init__(self, game, path='resources/sprites/dialogs/brasil/carmen/carmen.png', scale=0.5):
-        super().__init__(game=game, path=path, scale=scale)
-        self.images = deque(
-            [pg.transform.smoothscale(img, (self.image.get_width() * scale, self.image.get_height() * scale))
-             for img in self.images])
-        self.dialogo = (HALF_WIDTH - self.images[0].get_width() // 2, HEIGHT * 1.2 - self.images[0].get_height())
-
-    def draw(self):
-        if self.game.player.map_pos == (15, 5):
-            self.game.screen.blit(self.images[0], self.dialogo)
-        else:
-            return
-        
-class DialogElis(AnimatedSprite):
-    def __init__(self, game, path='resources/sprites/dialogs/brasil/elis/elis.png', scale=0.5):
-        super().__init__(game=game, path=path, scale=scale)
-        self.images = deque(
-            [pg.transform.smoothscale(img, (self.image.get_width() * scale, self.image.get_height() * scale))
-             for img in self.images])
-        self.dialogo = (HALF_WIDTH - self.images[0].get_width() // 2, HEIGHT * 1.2 - self.images[0].get_height())
-
-    def draw(self):
-        if self.game.player.map_pos == (14, 5):
-            self.game.screen.blit(self.images[0], self.dialogo)
-        else:
-            return
-        
-class DialogFernanda(AnimatedSprite):
-    def __init__(self, game, path='resources/sprites/dialogs/brasil/fernanda/fernanda.png', scale=0.5):
-        super().__init__(game=game, path=path, scale=scale)
-        self.images = deque(
-            [pg.transform.smoothscale(img, (self.image.get_width() * scale, self.image.get_height() * scale))
-             for img in self.images])
-        self.dialogo = (HALF_WIDTH - self.images[0].get_width() // 2, HEIGHT * 1.2 - self.images[0].get_height())
-
-    def draw(self):
-        if self.game.player.map_pos == (13, 5):
-            self.game.screen.blit(self.images[0], self.dialogo)
-        else:
-            return
