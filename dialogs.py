@@ -94,7 +94,7 @@ class DialogsMundo(AnimatedSprite):
             return
 
 class DialogsCriacoes(AnimatedSprite):
-    def __init__(self, game, path='resources/sprites/dialogs/criacoes/hedy/hedy.png', scale=0.5):
+    def __init__(self, game, path='resources/sprites/dialogs/criacoes/ada.png', scale=0.5):
         super().__init__(game=game, path=path, scale=scale)
         self.images = deque(
             [pg.transform.smoothscale(img, (self.image.get_width() * scale, self.image.get_height() * scale))
@@ -119,7 +119,7 @@ class DialogsCriacoes(AnimatedSprite):
         else:
             return        
 class DialogsBrasil(AnimatedSprite):
-    def __init__(self, game, path='resources/sprites/dialogs/brasil/maria/maria.png', scale=0.5):
+    def __init__(self, game, path='resources/sprites/dialogs/brasil/ana.png', scale=0.5):
         super().__init__(game=game, path=path, scale=scale)
         self.images = deque(
             [pg.transform.smoothscale(img, (self.image.get_width() * scale, self.image.get_height() * scale))
